@@ -1,0 +1,28 @@
+{
+  "name": "@schwingbat/math2",
+  "version": "1.0.0",
+  "description": "A collection of helpful math functions that should have been included in the JS standard library.",
+  "main": "Math2.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "jest --verbose"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://www.github.com/schwingbat/math2"
+  },
+  "keywords": [
+    "math",
+    "util",
+    "utility",
+    "helper",
+    "convenience"
+  ],
+  "author": "Tony McCoy <tony@ratwizard.io>",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^18.1.0"
+  }
+}
