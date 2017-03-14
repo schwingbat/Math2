@@ -23,8 +23,13 @@ describe("Math2.encomma", () => {
         expect(Math2.encomma("52206.12.152")).toBe("52,206.12");
     });
 
+    it("should use a provided delimiter", () => {
+        expect(Math2.encomma(1000000, ".")).toBe("1.000.000");
+        expect(Math2.encomma(123456789, "$")).toBe("123$456$789");
+    });
+
     it("should make currency display awesome", () => {
-        const amount = 232 * Math2.excomma("1,000,000") / 100;
+        const amount = 232 * Math2.decomma("1,000,000") / 100;
 
         expect("$" + Math2.encomma(amount)).toBe("$2,320,000");
     });

@@ -15,8 +15,10 @@
             : num;
     }
 
-    exp.encomma = function(number) {
+    exp.encomma = function(number, delimiter) {
         // Add commas to a large number.
+
+        if (!delimiter) delimiter = ",";
 
         // Turn it into a number with existing commas stripped.
         if (typeof number === "string") {
@@ -41,7 +43,7 @@
             result.push(str[i]);
 
             if (counter === 3 && i !== 0) {
-                result.push(",");
+                result.push(delimiter);
                 counter = 0;
             }
 
